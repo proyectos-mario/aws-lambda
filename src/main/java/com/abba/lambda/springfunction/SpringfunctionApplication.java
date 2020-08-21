@@ -15,19 +15,6 @@ public class SpringfunctionApplication {
 		SpringApplication.run(SpringfunctionApplication.class, args);
 	}
 	
-	@Bean
-    public Function<String, String> function() {
-        return input -> input;
-    }
-
-    @Bean
-    public Consumer<String> consume2() {
-        return input -> System.out.println("Input: " + input);
-    }
-
-    @Bean
-    public Supplier<String> supply2() {
-        return () -> "Hello Youtube";
-    }
+	
 
 }
